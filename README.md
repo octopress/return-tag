@@ -27,7 +27,7 @@ Next add it to your gems list in Jekyll's `_config.yml`
 
 ## Usage
 
-Here's a simple example where you can see that it does the same thing as the standard liquid render braces `{{ }}`.
+Here's a simple example where you can see that it does the same thing as the standard liquid render braces.
 
     {{ site.author }}                  //=> Bobby Tables
     {% return site.author %}           //=> Bobby Tables
