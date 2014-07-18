@@ -3,7 +3,7 @@ title: Your awesome title
 email: your-email@domain.com
 baseurl: ""
 url: "http://yourdomain.com"
-timezone: America/Chicago
+timezone: UTC
 
 exclude:
   - Gemfile*
