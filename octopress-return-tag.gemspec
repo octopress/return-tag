@@ -9,7 +9,6 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Brandon Mathis"]
   spec.email         = ["brandon@imathis.com"]
   spec.summary       = %q{Return tag renders a variable with some nice features}
-  spec.description   = %q{Return tag renders a variable with some nice features}
   spec.homepage      = "https://github.com/octopress/return-tag"
   spec.license       = "MIT"
 
@@ -19,9 +18,14 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_runtime_dependency "octopress-tag-helpers", "~> 1.0"
-  spec.add_runtime_dependency "jekyll"
+  spec.add_runtime_dependency "jekyll", ">= 2.0"
 
   spec.add_development_dependency "bundler", "~> 1.6"
   spec.add_development_dependency "rake"
   spec.add_development_dependency "clash"
+
+  if RUBY_VERSION >= "2"
+    spec.add_development_dependency "pry-byebug"
+  end
+
 end
